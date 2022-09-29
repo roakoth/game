@@ -30,7 +30,10 @@ function checkInput() {
     wordQueue.shift(); //shift removes first item from the array, making next item "currentItem"
     input.value = ''; //empty string
 
-    
+    quote.childNodes[highlightPosition].className = "";  
+    highlightPosition++;                           
+    quote.childNodes[highlightPosition].className = 'highlight'; 
+ 
  }
 
 start.addEventListener('click', startGame);
